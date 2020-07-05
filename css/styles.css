@@ -147,6 +147,14 @@ section > *:last-child {
   margin-bottom: 0;
 }
 
+aside {
+  position: sticky;
+  bottom: 0;
+  background: var(--backgroundColor);
+  padding: 1em;
+  border: 3px solid white;
+}
+
 p {
   margin-bottom: 1.15rem;
   max-width: 50em;
@@ -314,4 +322,8 @@ form > .grid {
 small,
 .small {
   font-size: var(--smallFont);
+}
+
+.hacker {
+  --backgroundColor: #000;
 }

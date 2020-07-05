@@ -210,6 +210,29 @@
       <h3>Site Name</h3>
       <p>&copy; 2020 Zak Laughton LLC</p>
     </footer>
+    <aside>
+      <label for="theme-select">Theme:</label>
+      <select id="theme-select" type="text">
+        <option value="mellow-green">Mellow Green</option>
+        <option value="hacker">90's Hacker </option>
+      </select>
+    </aside>
+
+    <script>
+      const themeSelector = document.getElementById("theme-select");
+      const body = document.getElementsByTagName("body")[0];
+
+      themeSelector.addEventListener("change", (e) => {
+        console.log("body: ", body);
+        const newTheme = e.target.value;
+        console.log(`newTheme = ${newTheme}`);
+        const selectedIndex = themeSelector.selectedIndex;
+        console.log("selectedIndex: ", themeSelector);
+
+        body.className = newTheme;
+        console.log("BODY: ", body.className);
+      });
+    </script>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
