@@ -54,6 +54,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400|Ubuntu+Mono:500");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@562&family=Modak&display=swap");
 
 html {
   font-size: 100%;
@@ -380,6 +381,8 @@ small,
   --headingColor: #fdd97bff;
   --border: 5px dashed #fdd97bff;
   --buttonColor: #9adde6ff;
+  --headingFont: "Modak", cursive;
+  --bodyFont: "Dancing Script", cursive;
 }
 
 /* 
