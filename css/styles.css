@@ -12,13 +12,18 @@
   /* Intentions */
   --backgroundColor: var(--black);
   --textColor: var(--white);
+  --headingColor: var(--textColor);
+  --cancelTextColor: var(--white);
   --primary: var(--green);
   --secondary: var(--darkGreen);
   --danger: var(--red);
   --cardBackground: var(--darkGray);
   --headerBackground: var(--darkGreen);
+  --border: none;
+  --buttonColor: var(--primary);
   --buttonTextColor: var(--black);
   --buttonHoverColor: var(--greenHovered);
+  --line: 1px solid var(--textColor);
 
   /* Text/font */
   --headingFont: "Ubuntu", sans-serif;
@@ -34,6 +39,7 @@
   /* Positioning */
   --containerPadding: 1em;
   --headerHeight: 3rem;
+  --borderRadius: 5px;
 
   /* Elevation */
   --layer-0: none;
@@ -47,6 +53,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400|Ubuntu+Mono:500");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
 
 html {
   font-size: 100%;
@@ -76,6 +83,7 @@ body {
 header {
   background: var(--headerBackground);
   box-shadow: var(--level-2);
+  color: var(--headingColor);
   position: fixed;
   top: 0;
   left: 0;
@@ -85,6 +93,7 @@ header {
   align-items: center;
   height: var(--headerHeight);
   padding: var(--containerPadding);
+  border: var(--border);
 }
 
 header h1 {
@@ -93,7 +102,7 @@ header h1 {
 }
 
 header nav a {
-  color: white;
+  color: var(--textColor);
   text-decoration: none;
 }
 
@@ -103,6 +112,7 @@ header nav a + a {
 
 footer {
   background: var(--headerBackground);
+  border: var(--headerBorder);
   text-align: center;
   padding: 1em;
 }
@@ -130,9 +140,10 @@ article > section {
 section {
   background: var(--cardBackground);
   padding: 1em;
-  border-radius: 5px;
+  border-radius: var(--borderRadius);
   vertical-align: center;
   grid-column: 1 / -1;
+  border: var(--border);
 }
 
 section.card {
@@ -181,6 +192,7 @@ h5 {
   font-family: var(--bodyFont);
   font-weight: 500;
   line-height: 1.15;
+  color: var(--headingColor);
 }
 
 h1 {
@@ -211,7 +223,7 @@ figure {
 
 img {
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: var(--borderRadius);
   box-shadow: var(--layer-1);
 }
 
@@ -221,7 +233,7 @@ figcaption {
 }
 
 code {
-  border: 1px solid var(--white);
+  border: var(--line);
   display: block;
   width: 100%;
   color: var(--primary);
@@ -236,13 +248,11 @@ label {
 }
 
 button {
-  --buttonColor: var(--primary);
-
   appearance: none;
   color: var(--buttonTextColor);
   background-color: var(--buttonColor);
   border: none;
-  border-radius: 5px;
+  border-radius: var(--borderRadius);
   padding: 5px 25px;
   box-shadow: var(--level-1);
   transition: 0.3s ease-in-out box-shadow;
@@ -256,7 +266,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
 
 button.cancel {
   background: var(--danger);
-  color: var(--textColor);
+  color: var(--cancelTextColor);
 }
 
 button[disabled] {
@@ -268,7 +278,7 @@ select,
 textarea {
   padding: 4px 5px;
   border: 1px solid var(--secondary);
-  border-radius: 4px;
+  border-radius: var(--borderRadius);
 }
 
 input[type="range"] {
@@ -290,6 +300,10 @@ input[type="range"]::-webkit-slider-thumb {
   height: 25px; /* Slider handle height */
   background: var(--secondary); /* Green background */
   cursor: pointer;
+}
+
+hr {
+  border-color: var(--textColor);
 }
 
 textArea {
@@ -326,4 +340,52 @@ small,
 
 .hacker {
   --backgroundColor: #000;
+  --borderRadius: none;
+  --textColor: #03e400;
+  --line: solid 2px #03e400;
+  --cardBackground: #000;
+  --headerBackground: #000;
+  --border: var(--line);
+  --buttonColor: #c0c0c0;
+  --buttonHoverColor: #c0c0c0;
+  --danger: #c0c0c0;
+  --cancelTextColor: var(--buttonTextColor);
+  --headingColor: #03e400;
+  --headingFont: "Roboto Mono", monospace;
+  --bodyFont: "Roboto Mono", monospace;
 }
+
+.inaccessible {
+  --backgroundColor: white;
+  --textColor: #f3f2f2;
+  --cancelTextColor: #f3f2f2;
+  --primary: white;
+  --secondary: #f3f2f2;
+  --danger: #f3f2f2;
+  --cardBackground: #f3f2f2;
+  --headerBackground: white;
+  --border: none;
+  --buttonColor: white;
+  --buttonTextColor: white;
+  --buttonHoverColor: none;
+  --line: 1px solid #f3f2f2;
+}
+
+.my-little-pony {
+  --backgroundColor: #9adde6ff;
+  --cardBackground: #c7b9d2ff;
+  --textColor: #157eabff;
+  --secondary: #fdd97bff;
+  --headerBackground: #c7b9d2ff;
+  --headingColor: #fdd97bff;
+  --border: 5px dashed #fdd97bff;
+  --buttonColor: #9adde6ff;
+}
+
+/* 
+$blizzard-blue: #9ADDE6ff;
+$thistle: #C7B9D2ff;
+$forest-green-crayola: #4EA561ff;
+$celadon-blue: 
+$orange-yellow-crayola: #FDD97Bff;
+*/
