@@ -339,6 +339,8 @@ small,
   font-size: var(--smallFont);
 }
 
+/* Custom themes */
+
 .hacker {
   --backgroundColor: #000;
   --borderRadius: none;
