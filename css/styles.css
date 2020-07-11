@@ -134,7 +134,7 @@ aside {
   bottom: 0;
   background: var(--backgroundColor);
   padding: 1em;
-  border: 3px solid white;
+  border: var(--line);
 }
 
 p {
@@ -265,7 +265,7 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  border: 1px solid var(--primary);
+  border: var(--line);
   border-radius: 50%;
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
@@ -321,12 +321,12 @@ small,
   --red: #ff0000c2;
 
   /* Intentions */
+  --primary: var(--green);
+  --secondary: var(--darkGreen);
   --backgroundColor: var(--black);
   --textColor: var(--white);
   --headingColor: var(--textColor);
   --cancelTextColor: var(--white);
-  --primary: var(--green);
-  --secondary: var(--darkGreen);
   --danger: var(--red);
   --cardBackground: var(--darkGray);
   --headerBackground: var(--darkGreen);
@@ -337,53 +337,68 @@ small,
 }
 
 .hacker {
-  --backgroundColor: #000;
+  /* Colors */
+  --black: #000;
+  --green: #03e400;
+  --windowsGray: #c0c0c0;
+
+  /* Intentions */
+  --primary: var(--green);
+  --secondary: var(--green);
+  --backgroundColor: var(--black);
   --borderRadius: none;
-  --textColor: #03e400;
-  --line: solid 2px #03e400;
-  --cardBackground: #000;
-  --headerBackground: #000;
+  --textColor: var(--green);
+  --line: solid 2px var(--green);
+  --cardBackground: var(--black);
+  --headerBackground: var(--black);
   --border: var(--line);
-  --buttonColor: #c0c0c0;
-  --danger: #c0c0c0;
+  --buttonTextColor: var(--black);
+  --buttonColor: var(--windowsGray);
+  --danger: var(--windowsGray);
   --cancelTextColor: var(--buttonTextColor);
-  --headingColor: #03e400;
+  --headingColor: var(--green);
   --headingFont: "Roboto Mono", monospace;
   --bodyFont: "Roboto Mono", monospace;
 }
 
 .inaccessible {
-  --backgroundColor: white;
-  --textColor: #f3f2f2;
-  --cancelTextColor: #f3f2f2;
-  --primary: white;
-  --secondary: #f3f2f2;
-  --danger: #f3f2f2;
-  --cardBackground: #f3f2f2;
-  --headerBackground: white;
+  /* Colors */
+  --white: white;
+  --offWhite: #f3f2f2;
+
+  /* Intentions */
+  --primary: var(--white);
+  --secondary: var(--offWhite);
+  --backgroundColor: var(--primary);
+  --textColor: var(--secondary);
+  --cancelTextColor: var(--secondary);
+  --danger: var(--secondary);
+  --cardBackground: var(--secondary);
+  --headerBackground: var(--primary);
   --border: none;
-  --buttonColor: white;
-  --buttonTextColor: white;
-  --line: 1px solid #f3f2f2;
+  --buttonColor: var(--primary);
+  --buttonTextColor: var(--primary);
+  --line: 1px solid var(--secondary);
 }
 
 .my-little-pony {
-  --backgroundColor: #9adde6ff;
-  --cardBackground: #c7b9d2ff;
-  --textColor: #157eabff;
-  --secondary: #fdd97bff;
-  --headerBackground: #c7b9d2ff;
-  --headingColor: #fdd97bff;
-  --border: 5px dashed #fdd97bff;
-  --buttonColor: #9adde6ff;
+  /* Colors */
+  --blizzardBlue: #9adde6ff;
+  --creamyPurple: #c7b9d2ff;
+  --forestGreen: #4ea561ff;
+  --celadonBlue: #157eabff;
+  --orangeYellow: #fdd97bff;
+
+  /* Intentions */
+  --backgroundColor: var(--blizzardBlue);
+  --cardBackground: var(--creamyPurple);
+  --textColor: var(--celadonBlue);
+  --secondary: var(--orangeYellow);
+  --headerBackground: var(--creamyPurple);
+  --headingColor: var(--orangeYellow);
+  --line: 5px dashed var(--orangeYellow);
+  --border: var(--line);
+  --buttonColor: var(--blizzardBlue);
   --headingFont: "Modak", cursive;
   --bodyFont: "Dancing Script", cursive;
 }
-
-/* 
-$blizzard-blue: #9ADDE6ff;
-$thistle: #C7B9D2ff;
-$forest-green-crayola: #4EA561ff;
-$celadon-blue: 
-$orange-yellow-crayola: #FDD97Bff;
-*/
