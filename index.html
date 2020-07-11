@@ -225,14 +225,10 @@
       const body = document.getElementsByTagName("body")[0];
 
       themeSelector.addEventListener("change", (e) => {
-        console.log("body: ", body);
         const newTheme = e.target.value;
-        console.log(`newTheme = ${newTheme}`);
         const selectedIndex = themeSelector.selectedIndex;
-        console.log("selectedIndex: ", themeSelector);
 
         body.className = newTheme;
-        console.log("BODY: ", body.className);
       });
     </script>
 
