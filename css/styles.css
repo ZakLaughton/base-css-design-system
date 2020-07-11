@@ -390,15 +390,18 @@ small,
   --orangeYellow: #fdd97bff;
 
   /* Intentions */
-  --backgroundColor: var(--blizzardBlue);
-  --cardBackground: var(--creamyPurple);
-  --textColor: var(--celadonBlue);
+  --primary: var(--creamyPurple);
   --secondary: var(--orangeYellow);
-  --headerBackground: var(--creamyPurple);
-  --headingColor: var(--orangeYellow);
-  --line: 5px dashed var(--orangeYellow);
+  --danger: var(--orangeYellow);
+
+  --buttonColor: var(--primary);
+  --backgroundColor: var(--blizzardBlue);
+  --cardBackground: var(--primary);
+  --textColor: var(--celadonBlue);
+  --headerBackground: var(--primary);
+  --headingColor: var(--secondary);
+  --line: 5px dashed var(--secondary);
   --border: var(--line);
-  --buttonColor: var(--blizzardBlue);
   --headingFont: "Modak", cursive;
   --bodyFont: "Dancing Script", cursive;
 }
