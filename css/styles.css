@@ -1,28 +1,4 @@
 :root {
-  /* Colors */
-  --black: #222629;
-  --darkGray: #474b4f;
-  --gray: #6b6e70;
-  --white: #fefffa;
-  --darkGreen: #415d1d;
-  --green: #86c232;
-  --red: #ff0000c2;
-
-  /* Intentions */
-  --backgroundColor: var(--black);
-  --textColor: var(--white);
-  --headingColor: var(--textColor);
-  --cancelTextColor: var(--white);
-  --primary: var(--green);
-  --secondary: var(--darkGreen);
-  --danger: var(--red);
-  --cardBackground: var(--darkGray);
-  --headerBackground: var(--darkGreen);
-  --border: none;
-  --buttonColor: var(--primary);
-  --buttonTextColor: var(--black);
-  --line: 1px solid var(--textColor);
-
   /* Text/font */
   --headingFont: "Ubuntu", sans-serif;
   --bodyFont: "Ubuntu Mono", monospace;
@@ -44,10 +20,6 @@
   --layer-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --layer-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --layer-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --layer-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400|Ubuntu+Mono:500");
@@ -338,6 +310,31 @@ small,
 }
 
 /* Custom themes */
+.mellow-green {
+  /* Colors */
+  --black: #222629;
+  --darkGray: #474b4f;
+  --gray: #6b6e70;
+  --white: #fefffa;
+  --darkGreen: #415d1d;
+  --green: #86c232;
+  --red: #ff0000c2;
+
+  /* Intentions */
+  --backgroundColor: var(--black);
+  --textColor: var(--white);
+  --headingColor: var(--textColor);
+  --cancelTextColor: var(--white);
+  --primary: var(--green);
+  --secondary: var(--darkGreen);
+  --danger: var(--red);
+  --cardBackground: var(--darkGray);
+  --headerBackground: var(--darkGreen);
+  --border: none;
+  --buttonColor: var(--primary);
+  --buttonTextColor: var(--black);
+  --line: 1px solid var(--textColor);
+}
 
 .hacker {
   --backgroundColor: #000;
