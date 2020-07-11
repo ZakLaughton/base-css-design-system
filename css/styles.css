@@ -6,7 +6,6 @@
   --white: #fefffa;
   --darkGreen: #415d1d;
   --green: #86c232;
-  --greenHovered: #66ab06;
   --red: #ff0000c2;
 
   /* Intentions */
@@ -22,7 +21,6 @@
   --border: none;
   --buttonColor: var(--primary);
   --buttonTextColor: var(--black);
-  --buttonHoverColor: var(--greenHovered);
   --line: 1px solid var(--textColor);
 
   /* Text/font */
@@ -350,7 +348,6 @@ small,
   --headerBackground: #000;
   --border: var(--line);
   --buttonColor: #c0c0c0;
-  --buttonHoverColor: #c0c0c0;
   --danger: #c0c0c0;
   --cancelTextColor: var(--buttonTextColor);
   --headingColor: #03e400;
@@ -370,7 +367,6 @@ small,
   --border: none;
   --buttonColor: white;
   --buttonTextColor: white;
-  --buttonHoverColor: none;
   --line: 1px solid #f3f2f2;
 }
 
