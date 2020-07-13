@@ -151,6 +151,8 @@ li a {
 
 p a:hover,
 li a:hover {
+  border-style: var(--linkHoverBorder);
+  border-width: thin;
   border-bottom: solid 2px var(--primary);
 }
 
@@ -348,6 +350,7 @@ small,
   --backgroundColor: var(--black);
   --borderRadius: none;
   --textColor: var(--green);
+  --linkHoverBorder: solid;
   --line: solid 2px var(--green);
   --cardBackground: var(--black);
   --headerBackground: var(--black);
