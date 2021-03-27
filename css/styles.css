@@ -31,6 +31,10 @@ html {
   box-sizing: border-box;
 } /*16px*/
 
+* {
+  transition: ease-in-out 1s;
+}
+
 *,
 *::before,
 *::after {
